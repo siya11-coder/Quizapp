@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy the contents of the 'Quizapp' directory (inside /project) into Nginx's default serving directory
-COPY ./project/Quizapp /usr/share/nginx/html/
+COPY . . /usr/share/nginx/html/
 
 
 # Expose port 80
